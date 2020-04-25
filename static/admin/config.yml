@@ -27,7 +27,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
-    - name: "illustrations"
+  - name: "illustrations"
     label: "Illustrations"
     folder: "src/pages/illustrations"
     create: true
@@ -42,7 +42,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
-    - name: "styling"
+  - name: "styling"
     label: "Styling"
     folder: "src/pages/styling"
     create: true
@@ -57,7 +57,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
-    - name: "apparel"
+  - name: "apparel"
     label: "Apparel"
     folder: "src/pages/apparel"
     create: true
