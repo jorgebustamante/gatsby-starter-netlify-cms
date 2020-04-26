@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
-image: /img/home-jumbotron.jpg
+title: Art by designer
+image: /img/pink-grass.jpg
 heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+subheading: Multidisciplinary designer based in city
 mainpitch:
   title: Why Kaldi
   description: >
