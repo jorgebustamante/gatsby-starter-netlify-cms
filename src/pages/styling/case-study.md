@@ -6,8 +6,7 @@ featuredpost: true
 featuredimage: /img/memphis.png
 description: Testing pages/styling
 tags:
-  - flavor
-  - tasting
+  - Styling
 ---
 ![memphis design](/img/memphis.png)
 

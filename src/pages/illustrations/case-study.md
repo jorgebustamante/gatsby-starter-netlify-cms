@@ -6,8 +6,7 @@ featuredpost: true
 featuredimage: /img/line-art.jpeg
 description: Testing in pages/illustration
 tags:
-  - flavor
-  - tasting
+  - Illustrations
 ---
 ![flavor wheel](/img/line-art.jpeg)
 

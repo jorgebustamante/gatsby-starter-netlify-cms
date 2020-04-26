@@ -8,6 +8,15 @@ class FeaturedRoll extends React.Component {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
 
+    let SlugParser=(SlugBoi) =>{
+      let str = SlugBoi,
+      delimiter='/',
+      stopper=2,
+      tokens = str.split(delimiter).slice(1, stopper),
+      result = tokens.join(delimiter);
+      return result
+    }
+
     return (
       <div className="columns is-multiline">
         {posts &&
@@ -32,24 +41,27 @@ class FeaturedRoll extends React.Component {
                   <p className="post-meta">
                     <Link
                       className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
+                      // to={post.fields.slug}
+                      to={`/${SlugParser(post.fields.slug)}/`}
+                    > 
+                
+                      {post.frontmatter.tags}
                     </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
+                    {/* <span> &bull; </span> */}
+                    {/* <span className="subtitle is-size-5 is-block">
                       {post.frontmatter.date}
-                    </span>
+                    </span> */}
                   </p>
                 </header>
-                <p>
+                <p>this will be stylized to be like polaroid</p>
+                {/* <p>
                   {post.excerpt}
                   <br />
                   <br />
                   <Link className="button" to={post.fields.slug}>
                     Keep Reading →
                   </Link>
-                </p>
+                </p> */}
               </article>
             </div>
           ))}
@@ -86,6 +98,7 @@ export default () => (
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
+                tags
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 120, quality: 100) {

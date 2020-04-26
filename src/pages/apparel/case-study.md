@@ -6,8 +6,7 @@ featuredpost: true
 featuredimage: /img/digital-portrait.jpeg
 description: Testing markdown customizing from netlify cms
 tags:
-  - flavor
-  - tasting
+  - Apparel
 ---
 ![flavor wheel](/img/digital-portrait.jpeg)
 
